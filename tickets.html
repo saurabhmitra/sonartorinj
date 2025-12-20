@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonar Tori NJ - Tickets</title>
+    <title>Sonar Tori - Tickets</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,8 +11,8 @@
         <div class="nav-container">
             <div class="logo">
                 <a href="index.html" class="logo-link">
-                    <img src="images/logo.jpg" alt="Sonar Tori NJ Logo" class="logo-img">
-                    <h1>Sonar Tori NJ</h1>
+                    <img src="images/logo.jpg" alt="Sonar Tori Logo" class="logo-img">
+                    <h1>Sonar Tori</h1>
                 </a>
             </div>
             <ul class="nav-menu">
@@ -32,44 +32,16 @@
     <main class="main-content">
         <section class="tickets-section">
             <div class="container">
-                <h2 class="page-title">Saraswati Puja 2026</h2>
-                
-                <div class="pricing-tiers">
-                    <div class="pricing-card">
-                        <h3>Adult</h3>
-                        <div class="price">$45</div>
-                        <p class="tier-description">Veg/Non-Veg</p>
-                    </div>
-                    <div class="pricing-card">
-                        <h3>College Students</h3>
-                        <div class="price">$25</div>
-                        <p class="tier-description">With valid student ID</p>
-                    </div>
-                    <div class="pricing-card">
-                        <h3>Kids (5-12 years)</h3>
-                        <div class="price">$20</div>
-                        <p class="tier-description">Ages 5 to 12 years</p>
-                    </div>
-                    <div class="pricing-card">
-                        <h3>Puja + Bhog only</h3>
-                        <div class="price">$20</div>
-                        <p class="tier-description">Puja and Bhog only</p>
-                    </div>
-                    <div class="pricing-card">
-                        <h3>Kids &lt; 5 years</h3>
-                        <div class="price">Free</div>
-                        <p class="tier-description">Children under 5 years</p>
-                    </div>
-                </div>
+                <h2 class="page-title">Saraswati Puja and Sankranti 2026</h2>
 
                 <div class="payment-table-section">
                     <h3>Purchase Tickets</h3>
                     <table class="payment-table">
                         <thead>
                             <tr>
-                                <th>Ticket Tier</th>
+                                <th>Ticket Type</th>
                                 <th>Price</th>
-                                <th>Payment Link</th>
+                                <th>Stripe Payment Link</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -77,41 +49,62 @@
                                 <td>Adult (Veg/Non-Veg)</td>
                                 <td>$45</td>
                                 <td class="payment-link-cell">
-                                    <div class="stripe-placeholder">
-                                        <!-- Insert Stripe payment link here -->
-                                        <a href="#" class="stripe-link">Stripe Payment Link</a>
-                                    </div>
+                                    <script async
+									src="https://js.stripe.com/v3/buy-button.js">
+									</script>
+
+									<stripe-buy-button
+									buy-button-id="buy_btn_1SgHSD2LvfvvUdNtcdF6Rvhp"
+									publishable-key="pk_live_51Pi2QQ2LvfvvUdNtuoq7epwTvUNIxekUDNhbQPzqoLpmWOWS1LD2d2mEWQvQs9GkeSHiIvJEhy4GVv7e3PgdWYPq0066ju3xbv"
+									>
+									</stripe-buy-button>
                                 </td>
                             </tr>
                             <tr>
-                                <td>College Students</td>
+                                <td>Students</td>
                                 <td>$25</td>
                                 <td class="payment-link-cell">
-                                    <div class="stripe-placeholder">
-                                        <!-- Insert Stripe payment link here -->
-                                        <a href="#" class="stripe-link">Stripe Payment Link</a>
-                                    </div>
+									<script async
+									src="https://js.stripe.com/v3/buy-button.js">
+									</script>
+									
+									<stripe-buy-button
+									buy-button-id="buy_btn_1SgHYv2LvfvvUdNtDkKeeJ4b"
+									publishable-key="pk_live_51Pi2QQ2LvfvvUdNtuoq7epwTvUNIxekUDNhbQPzqoLpmWOWS1LD2d2mEWQvQs9GkeSHiIvJEhy4GVv7e3PgdWYPq0066ju3xbv"
+									>
+									</stripe-buy-button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Kids (5-12 years)</td>
                                 <td>$20</td>
-                                <td class="payment-link-cell">
-                                    <div class="stripe-placeholder">
-                                        <!-- Insert Stripe payment link here -->
-                                        <a href="#" class="stripe-link">Stripe Payment Link</a>
-                                    </div>
-                                </td>
+								<td class="payment-link-cell">
+									<script async
+									src="https://js.stripe.com/v3/buy-button.js">
+									</script>
+
+									<stripe-buy-button
+									buy-button-id="buy_btn_1SgIp12LvfvvUdNtgM8g2I5Z"
+									publishable-key="pk_live_51Pi2QQ2LvfvvUdNtuoq7epwTvUNIxekUDNhbQPzqoLpmWOWS1LD2d2mEWQvQs9GkeSHiIvJEhy4GVv7e3PgdWYPq0066ju3xbv"
+									>
+									</stripe-buy-button>
+								</td>
                             </tr>
                             <tr>
                                 <td>Puja + Bhog only</td>
                                 <td>$20</td>
+
                                 <td class="payment-link-cell">
-                                    <div class="stripe-placeholder">
-                                        <!-- Insert Stripe payment link here -->
-                                        <a href="#" class="stripe-link">Stripe Payment Link</a>
-                                    </div>
-                                </td>
+									<script async
+									src="https://js.stripe.com/v3/buy-button.js">
+									</script>
+
+									<stripe-buy-button
+									buy-button-id="buy_btn_1SgIrQ2LvfvvUdNtKJ4JpGAN"
+									publishable-key="pk_live_51Pi2QQ2LvfvvUdNtuoq7epwTvUNIxekUDNhbQPzqoLpmWOWS1LD2d2mEWQvQs9GkeSHiIvJEhy4GVv7e3PgdWYPq0066ju3xbv"
+									>
+									</stripe-buy-button>
+								</td>
                             </tr>
                             <tr>
                                 <td>Kids &lt; 5 years</td>
@@ -132,7 +125,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Sonar Tori NJ. All rights reserved.</p>
+            <p>&copy; 2026 Sonar Tori. All rights reserved.</p>
         </div>
     </footer>
 
