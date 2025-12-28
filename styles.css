@@ -352,6 +352,26 @@ body {
     letter-spacing: -0.5px;
 }
 
+.donate-link-text {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.donate-link {
+    color: #FF6B35;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.donate-link:hover {
+    color: #e55a2b;
+    text-decoration: underline;
+}
+
 .payment-table {
     width: 100%;
     min-width: 600px;
@@ -454,6 +474,68 @@ body {
     padding: 3.5rem;
     border-radius: 16px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* Donate Page Styles */
+.donate-section {
+    padding: 2rem 0;
+}
+
+.donate-content {
+    background: var(--bubble-bg-color);
+    padding: 3.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.donate-info {
+    margin-bottom: 3rem;
+}
+
+.donate-info h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.donate-info p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
+.donate-button-section {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 2px solid #e9ecef;
+}
+
+.donate-button-section h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.stripe-donate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    padding: 2rem;
+}
+
+.donate-placeholder {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    color: #6c757d;
+    font-style: italic;
 }
 
 .organization-info {
@@ -629,8 +711,23 @@ body {
         font-size: 1rem;
     }
 
-    .contact-content {
+    .contact-content,
+    .donate-content {
         padding: 1.5rem;
+    }
+
+    .donate-info h3,
+    .donate-button-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .donate-info p {
+        font-size: 1rem;
+    }
+
+    .stripe-donate-container {
+        min-height: 150px;
+        padding: 1rem;
     }
 
     .payment-table-section {
