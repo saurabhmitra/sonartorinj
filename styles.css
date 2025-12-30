@@ -299,6 +299,62 @@ body {
     line-height: 1.8;
 }
 
+.sub-events {
+    margin: 2rem 0;
+}
+
+.sub-events h4 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.sub-events-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-events-list li {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.sub-events-list li:last-child {
+    margin-bottom: 0;
+}
+
+.sub-events-list .event-name {
+    color: #2c3e50;
+}
+
+.sub-events-list .event-description {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    margin-left: 0.5rem;
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .sub-events-list .event-name {
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+
+    .sub-events-list .event-description {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.25rem;
+    }
+}
+
 .map-section {
     background: var(--bubble-bg-color);
     padding: 2.5rem;
@@ -358,6 +414,15 @@ body {
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
+}
+
+.donate-section-tickets {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.donate-section-tickets .stripe-donate-container {
+    margin-top: 1rem;
 }
 
 .donate-link {
