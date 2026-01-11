@@ -229,6 +229,12 @@ body {
     font-weight: 400;
 }
 
+.organization-name {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 0.3em;
+}
+
 .event-title::after {
     content: '';
     display: block;
@@ -237,12 +243,6 @@ body {
     background: linear-gradient(90deg, #FF6B35, #e55a2b);
     margin: 1rem auto 0;
     border-radius: 2px;
-}
-
-.organization-name {
-    display: block;
-    font-size: 1.2em;
-    margin-top: 0.3em;
 }
 
 .event-content {
@@ -289,11 +289,26 @@ body {
     padding: 1rem;
 }
 
+.event-blurb-heading {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
 .event-blurb p {
     margin-bottom: 1.5rem;
     font-size: 1.15rem;
     line-height: 1.9;
     color: #4a5568;
+}
+
+.cta-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .cta-button {
@@ -304,7 +319,7 @@ body {
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
-    margin-top: 1rem;
+    margin: 0;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
     letter-spacing: 0.3px;
@@ -317,7 +332,7 @@ body {
 }
 
 .cta-button + .cta-button {
-    margin-left: 1rem;
+    margin-left: 0;
 }
 
 /* Events Page Styles */
@@ -361,16 +376,121 @@ body {
     letter-spacing: -0.5px;
 }
 
+.event-date-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
 .event-date {
     font-size: 1.2rem;
     color: #666;
-    margin-bottom: 1rem;
+    margin: 0;
     font-weight: 600;
 }
 
 .event-description {
     margin-bottom: 1rem;
     line-height: 1.8;
+}
+
+.schedule-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 992px) {
+    .schedule-menu-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+.schedule-section {
+    background: var(--bubble-bg-color);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    margin-top: 0;
+}
+
+.schedule-section h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.schedule-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.schedule-list li {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 1rem;
+}
+
+.schedule-list li:last-child {
+    margin-bottom: 0;
+}
+
+.schedule-time {
+    color: #2c3e50;
+    font-weight: 600;
+    min-width: 150px;
+    flex-shrink: 0;
+    font-family: 'SF Mono', 'Monaco', 'Menlo', 'Consolas', 'Roboto Mono', monospace;
+    text-align: left;
+}
+
+.schedule-event {
+    color: #4a5568;
+    flex-grow: 1;
+}
+
+.menu-section {
+    background: var(--bubble-bg-color);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    margin-top: 0;
+}
+
+.menu-section h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.menu-image-container {
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.menu-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 .map-section {
@@ -703,11 +823,6 @@ body {
         margin-top: 70px;
     }
 
-    .event-content {
-        grid-template-columns: 1fr;
-        padding: 2rem;
-    }
-
     .hamburger {
         display: flex;
     }
@@ -735,6 +850,16 @@ body {
 
     .event-content {
         grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+
+    .schedule-list li {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .schedule-time {
+        min-width: auto;
     }
 
     .contact-details {
@@ -784,6 +909,10 @@ body {
         margin: 0 auto;
     }
 
+    .page-title,
+    .event-title {
+        font-size: 2rem;
+    }
 
     .event-card-content h3 {
         font-size: 1.5rem;
