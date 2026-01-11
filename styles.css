@@ -165,10 +165,23 @@ body {
     text-align: center;
     font-size: 2.8rem;
     color: #2c3e50;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
     font-weight: 700;
     letter-spacing: -0.5px;
     position: relative;
+}
+
+.welcome-text {
+    font-size: 0.6em;
+    font-weight: 400;
+    display: block;
+}
+
+.organization-name {
+    display: block;
+    font-size: 1em;
+    margin-top: 0;
 }
 
 .event-title::after {
@@ -200,6 +213,11 @@ body {
 
 .event-image-placeholder {
     width: 100%;
+}
+
+.event-image-placeholder a {
+    display: block;
+    text-decoration: none;
 }
 
 .event-image {
@@ -244,6 +262,10 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
     background: linear-gradient(135deg, #e55a2b 0%, #FF6B35 100%);
+}
+
+.cta-button + .cta-button {
+    margin-left: 1rem;
 }
 
 /* Events Page Styles */
@@ -299,24 +321,44 @@ body {
     line-height: 1.8;
 }
 
-.sub-events {
-    margin: 2rem 0;
+.schedule-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.sub-events h4 {
-    font-size: 1.3rem;
+@media (min-width: 992px) {
+    .schedule-menu-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+.schedule-section {
+    background: var(--bubble-bg-color);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    margin-top: 0;
+}
+
+.schedule-section h3 {
+    font-size: 2rem;
     color: #2c3e50;
-    margin-bottom: 1rem;
-    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
-.sub-events-list {
+.schedule-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.sub-events-list li {
+.schedule-list li {
     padding: 1rem;
     margin-bottom: 0.75rem;
     color: #4a5568;
@@ -324,35 +366,55 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 1rem;
 }
 
-.sub-events-list li:last-child {
+.schedule-list li:last-child {
     margin-bottom: 0;
 }
 
-.sub-events-list .event-name {
+.schedule-time {
     color: #2c3e50;
+    font-weight: 600;
+    min-width: 150px;
+    flex-shrink: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
 }
 
-.sub-events-list .event-description {
-    font-size: 0.9em;
-    color: #666;
-    font-style: italic;
-    margin-left: 0.5rem;
-    display: inline;
+.schedule-event {
+    color: #4a5568;
+    flex-grow: 1;
 }
 
-@media (max-width: 768px) {
-    .sub-events-list .event-name {
-        display: block;
-        margin-bottom: 0.25rem;
-    }
+.menu-section {
+    background: var(--bubble-bg-color);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    margin-top: 0;
+}
 
-    .sub-events-list .event-description {
-        display: block;
-        margin-left: 0;
-        margin-top: 0.25rem;
-    }
+.menu-section h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.menu-image-container {
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.menu-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 .map-section {
@@ -698,6 +760,15 @@ body {
 
     .event-content {
         grid-template-columns: 1fr;
+    }
+
+    .schedule-list li {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .schedule-time {
+        min-width: auto;
     }
 
     .contact-details {
