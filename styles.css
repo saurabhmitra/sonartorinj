@@ -245,6 +245,31 @@ body {
     border-radius: 2px;
 }
 
+.cancellation-notice {
+    background: rgba(255, 245, 230, 0.95);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    margin-bottom: 2rem;
+    border-left: 4px solid #ff8635;
+}
+
+.cancellation-notice p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #2c3e50;
+}
+
+.cancellation-notice p:last-child {
+    margin-bottom: 0;
+}
+
+.cancellation-notice strong {
+    color: #ff8635;
+    font-weight: 600;
+}
+
 .event-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
