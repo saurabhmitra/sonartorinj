@@ -365,6 +365,10 @@ body {
     padding: 2rem 0;
 }
 
+.no-events-message {
+    text-align: center;
+}
+
 .event-card {
     background: var(--bubble-bg-color);
     border-radius: 16px;
