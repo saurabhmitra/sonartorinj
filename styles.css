@@ -281,6 +281,10 @@ body {
     flex: 1;
 }
 
+.main-content.events-page .upcoming-event-tickets {
+    margin-top: 1rem;
+}
+
 .main-content.events-page .upcoming-event-map {
     margin-top: 1.25rem;
     width: 100%;
@@ -965,70 +969,14 @@ body {
 .ticket-event-meta {
     color: #666;
     font-size: 1.1rem;
-    margin: 0 0 1.5rem 0;
-}
-
-.ticket-tier-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    align-items: stretch;
-}
-
-.ticket-tier-column {
-    padding: 1.25rem 1.5rem;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.55);
-    border: 1px solid #e9ecef;
-    box-sizing: border-box;
-}
-
-.ticket-column-heading {
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #2c3e50;
     margin: 0 0 1rem 0;
 }
 
-.ticket-tier-column--free {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.ticket-tier-column--free .ticket-column-heading {
-    margin-bottom: 0;
-    flex-shrink: 0;
-}
-
-.ticket-free-value {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.75rem;
-    font-weight: 700;
+.ticket-registration-notice {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4a5568;
     margin: 0;
-    min-height: 5rem;
-}
-
-.ticket-stripe-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    min-width: 0;
-}
-
-.ticket-stripe-wrap stripe-buy-button {
-    display: inline-flex;
-    max-width: 100%;
-}
-
-@media (max-width: 600px) {
-    .ticket-tier-columns {
-        grid-template-columns: 1fr;
-    }
 }
 
 .payment-table-section {
@@ -1330,16 +1278,14 @@ body {
 }
 
 .about-blurb .about-blurb-events-link {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-color: rgba(255, 134, 53, 0.45);
-    text-underline-offset: 3px;
-    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+    color: #ff8635;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .about-blurb .about-blurb-events-link:hover {
-    color: #ff8635;
-    text-decoration-color: #ff8635;
+    color: #e57f2b;
 }
 
 /* Sponsor Section */
