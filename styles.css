@@ -475,6 +475,18 @@ body {
     margin-bottom: 1rem;
 }
 
+.main-content.events-page .event-card-content .event-date {
+    margin-bottom: 0.2rem;
+}
+
+.main-content.events-page .event-venue-detail {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: #888;
+    margin: 0 0 0.35rem 0;
+    font-weight: 500;
+}
+
 .main-content.events-page .event-description {
     font-size: 1.05rem;
     line-height: 1.7;
