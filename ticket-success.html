@@ -7,6 +7,9 @@
     <title>Sonar Tori - Ticket Confirmed</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +48,9 @@
         <section class="tickets-section">
             <div class="container">
                 <div class="ticket-event-card ticket-success-card">
-                    <div class="ticket-success-check">✓</div>
+                    <div class="ticket-success-check" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
                     <h2 class="ticket-event-title">Thank you! Your tickets are confirmed.</h2>
                     <p class="ticket-event-meta">A receipt and confirmation have been emailed to you by Stripe.
                         We look forward to celebrating Durga Pujo 2026 with you!</p>
